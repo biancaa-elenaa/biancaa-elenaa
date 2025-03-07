@@ -1,34 +1,32 @@
-name: Generate snake animation
+# Hey there! 👋
 
-on:
-  schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
+## Background
 
-  workflow_dispatch:
+**Undergraduate Student at "Universitatea Politehnică Timișoara"**
 
-  push:
-    branches:
-    - master
+**Automation and Computers, Computer and Information Technology Branch**
 
-jobs:
-  generate:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
+## Personal Details
 
-    steps:
-      - name: generate snake.svg
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: dist/snake.svg?palette=github-dark
+- 04 June 2004
+- Târgu-Jiu, Gorj, Romania
+- Email: <bardanbianca04@gmail.com>
+- Phone Number: +40764661144
 
+## Current Skills
 
-      - name: push snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+[![My Skills](https://skillicons.dev/icons?i=java,c,cpp,git,py,matlab&theme=light)](https://skillicons.dev)
+
+## Favorite Code Editors / IDEs
+
+[![My Skills](https://skillicons.dev/icons?i=vscode,pycharm,emacs,visualstudio&theme=light)](https://skillicons.dev)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=biancaa-elenaa&layout=compact)
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
+  </picture>
+</div>
